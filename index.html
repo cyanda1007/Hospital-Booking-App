@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Booking App</title>
+
+ <link rel="stylesheet" href="./css/style.css"/>
+
+ <script src="./js/booking.js" defer></script>
+
+ <script src="./js/booking.dom.js" defer></script>
+
+ <script type="text/javascript"
+
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+
+</script>
+
+<script type="text/javascript">
+
+   (function(){
+
+      emailjs.init("sO3tRex7X0sQGM0hm");
+
+   })();
+
+</script>
+
+  </head>
+
+ <body>
+
+    <div class="container">
+
+        <div class="headerSection">
+
+            <h1>Bara Hospital Appointment Booking Form</h1>
+
+            <img src="./images/CHBAH_LOGO_full.png" alt="Bara Hospital logo" width="200px">
+
+        </div>
+        <label class="errorMessage"></label>
+        <div class="form">
+
+            <section class="landingInfo">
+                <div class="formField">
+                    <label for="departments">Department:</label>
+                    <select id="departments" name="departments" style="width: 200px !important;">
+                        <option value="" disabled selected> Select a department </option>
+                        <option value="endocrine"> Endocrine</option>
+                        <option value="mva"> M.V.A</option>
+                        <option value="neurology"> Neurology </option>
+                    </select>
+                </div>
+                <div class="formField">
+                    <label for="appointmentDate">Date:</label>
+                    <input type="datetime-local" id="appointmentDate" name="appointmentDate">
+                </div>
+                <input class="btn nextBtn" type="button" value="Next">
+
+            </section>
+
+            <section class="personalInfo">
+                <div class="formField">
+                
+                    <label for="nameSurname" class="personal-label">Name and Surname:</label>
+
+                    <input type="text" name="nameSurname" class="personal-input" id="nameSurname" style="width: 200px;">
+                </div>
+                
+                <div class="formField">
+                     <label for="idNumber" class="personal-label">ID Number:</label>
+
+                    <input type="number" name="idNumber" class="personal-input" id="idNumber" style="width: 200px;">
+                </div>
+               
+                <div class="formField">
+                     <label for="gender" class="personal-label">Gender:</label>
+
+                    <select id="gender" class="personal-input" name="gender">
+
+                        <option disabled selected> Select a gender </option>
+
+                        <option value="male">Male</option>
+
+                        <option value="female">Female</option>
+
+                        <option value="other">Other</option>
+
+                    </select>
+                </div>
+               
+                <div class="formField">
+                    <label for="age" class="personal-label">Age:</label>
+
+                    <input type="number" name="age" id="age" class="personal-input" style="width: 200px;">
+                </div>
+                
+                <div class="formField">
+                    <label for="contactNumber" class="personal-label">Contact Number:</label>
+
+                    <input type="tel" name="contactNumber" id="contactNumber" style="width: 200px;">
+                </div>
+               
+                <div class="formField">
+                    <label for="email" class="personal-label">E-Mail Address:</label>
+
+                    <input type="email" class="personal-input" name="email" id="email" style="width: 200px;">
+                </div>
+                
+                <div class="formField">
+                    <input class="btn backBtn" type="button" value="Back">
+
+                    <input class="btn bookNowBtn" type="button" value="Book Now">
+                </div>
+                
+
+            </section>
+
+            <section class="successInfo">
+
+                <div class="message">
+
+                    <p>Your booking has been made.</p>
+
+                    <p>Please check your e-mail for the link to the QR code you need on the day of your appointment</p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+ </body>
+</html>

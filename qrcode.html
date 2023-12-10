@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width,  initial-scale=1.0" />
+   <title>QR Code Generator</title>
+   <style>
+	<!--add styling-->
+        body {
+
+          display: flex;
+
+          flex-direction: column;
+
+          justify-content: center;
+
+          align-items: center;
+
+        }
+#qrcode{
+	
+	margin-left: 10%;
+}
+
+    </style>
+
+<!-- add the qrcode creator library -->
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+<!-- add the app.js  file-->
+<script  src="./js/booking.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <h3>Present The Following Code to The Hospital</h3>
+    </header>
+
+<main>
+	<!-- create a div to place the qrcode-->
+        <div id="qrcode"></div>
+ </main>
+<script src="./booking.js"></script>
+    <script>
+	//get the patient information from localStorage
+	let patients= JSON.parse(localStorage.getItem("patientInfo"));
+	let patient= JSON.stringify(patients[0]);
+		
+		//create new qrcode with the corresponding patient information 
+        var qrcode = new QRCode("qrcode",patient);
+console.log(patient);
+
+    </script>
+</body>
+
+ 
+
+</html>
+
+
+

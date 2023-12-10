@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* General styling */
+body{
+    background-color: #FFFFFF;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    background-color: lightgrey;
+    font-size: large;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100vw;
+    margin: 0 0 0 10%;
+    padding-top: 3em;
+    background-color: rgba(0, 173, 239,0.5);
+    height: auto;
+    padding-bottom: 3em; 
+    margin-left: auto;
+    margin-right: auto;
+}
+ #qr-div{
+    max-width: 1080px;
+    padding-top: 3em;
+    background-color: rgba(0, 173, 239,0.5);
+    height:860px !important;
+    /* position: absolute; */
+    height: 200px;
+ }
+ #qr{
+    margin: 0 0 0 20%;
+ }
+ /* Landing screen styling */
+.headerSection,.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3em;
+}
+h1 {
+    margin-right:0.5em;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.formField {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+label {
+    padding: 0 5%;
+    margin: 0 3%;
+    width: 50%;
+    font-size: larger;
+}
+
+input#appointmentDate{
+    width:230px !important;
+    margin: 0 -27px 0 8px;
+}
+select, input {
+    /* width:200px !important; */
+    display:block;
+    font-size: medium;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.landingInfo {
+    visibility: visible;
+    height:380px !important;
+    justify-content: center;
+}
+.personalInfo{
+    margin: 8% 0 0 0;
+}
+
+.personal-label, .personal-input{
+    width: 50%;
+    height: 50%;
+    margin: 1% 0;
+}
+.errorMessage{
+    display: block;
+    width: auto;
+    text-align: center;
+    color: rgb(238, 65, 53);
+    font-size: 95%;
+}
+.personalInfo, .successInfo {
+    visibility: hidden;
+    display: none;
+}
+.btn {
+    background-color: rgba(238, 65, 53,0.85);
+    color: rgba(0, 0, 0, 1);
+    border:0px solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    font-weight: bold;
+    /* margin: 1em 0em 0.5em 0em; */
+    margin:10px auto;
+    padding: 2% 3%;
+    width: 200px !important;
+}
+
+.btn:hover{
+    background-color: #fff;
+    /* text-shadow: 1px 1px 10px lightgreen; */
+    color: rgb(238, 65, 53);
+}
+ 
+/* .backBtn{
+    margin: 1em 1em 0em 0em !important;
+} */
+
+/* .bookNowBtn{
+    margin: 5% 0 0 2%;
+} */
+
+/* .nextBtn{
+    margin: 10% 0 0 10%;
+} */
+.message {
+    font-size: large;
+    margin: 7% 0 0 0;
+}
+
+#gender{
+    width: 51%;
+}
+
+/* QR Code styles*/
+div#qr-reader span:first-of-type {
+    display: none;
+}
+span#qr-reader__status_span {
+    display: none !important;
+}
+
+button {
+    background-color: rgba(238, 65, 53,0.85);
+    color: rgba(0, 0, 0, 1);
+    border:0px solid;
+    
+    padding: 10px;
+
+    
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    font-weight: bold;
+    
+ }
+ button:hover{
+    background-color: #fff;
+    /* text-shadow: 1px 1px 10px lightgreen; */
+    color: rgb(238, 65, 53);
+}
+#patient-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 5% 0 0 0;
+    visibility: hidden;
+}
+
+.patient-info{
+    width: 50%;
+    display: flex;
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; */
+    /* margin: 0 2%;
+    padding: 0 3%; */
+}
+.label {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.outputs{
+    width: 50%;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    /* text-shadow: 1px 1px 4px black; */
+}
+
+#hospital-logo{
+    margin: 0 0 0 40%;
+}
+
+#patient-heading{
+    text-align: center;
+}
+
+#accept-patient{
+    margin: 5% 0 5% 8%;
+    padding: 1% 3%;
+}
+
+/* #departments{
+    margin: 0 0 0 5%;
+} */
+
+/* #appointmentDate{
+    margin: 0 0 0 34%;
+} */
+
+/* @media screen AND (max-width: 1500px){
+    .container{
+        height: 100%;
+    }
+}
+
+@media screen AND (max-width: 1042px) {
+    body{
+        background-color: rgba(0, 173, 239,0.5);;
+    } 
+    .container{
+        height: 100%;
+        margin: 0;
+        padding: 0 0 8% 0;
+    }
+} */
+
+@media screen AND (max-width: 430px){
+
+    .container{
+        max-width: 410px;
+    }
+    h1 {
+        margin:0 auto;
+        text-align: center;
+    }
+    .formField{
+        flex-direction: column;
+    }
+    input#appointmentDate {
+        width: 195px !important;
+        margin: 0;
+    }
+     .personal-label{
+        /* font-size: 95%; */
+        width: 98%;
+    }
+    #gender{
+        width: 100%;
+    }
+    /* .personal-info{
+        margin: 0 0 0 50%;
+    } */
+
+    #departments{
+        margin: 0/*0 0 0 35%*/;
+    }
+    label {
+        font-size: medium;
+        padding: 0 5%;
+        margin: 0 3%;
+        width: 98%;
+        /*font-size: larger;*/
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+    <title>Hospital Interface</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script type="text/javascript" src="../js/qr.dom.js" defer ></script>
+  </head>
+  <body>
+    <div class="container" id="qr-div">
+      <img id="hospital-logo" src="../images/CHBAH_LOGO_full.png" width="200px">
+      <div id="qr">
+        <h3>Scan the QR code below</h3>
+        <div id="qr-reader" style="width: 600px"></div>
+      </div>
+      
+      <div id="patient-details">
+        <h3 id="patient-heading"> Patient Details</h3>
+        <div class="patient-info">
+          <p id="name-surname-label" class="label"> Name and Surname </p>
+          <span id="name-surname-output" class="outputs"></span>
+        </div>
+
+        <div class="patient-info">
+          <p id="gender-label" class="label"> Gender </p>
+          <span id="gender-output" class="outputs"></span>
+        </div>
+
+        <div class="patient-info">
+          <p id="age-label" class="label"> Age </p>
+          <span id="age-output" class="outputs"></span>
+        </div>
+
+        <div class="patient-info">
+          <p id="contact-label" class="label"> Contact Number </p>
+          <span id="contact-output" class="outputs"></span>
+        </div>
+
+        <div class="patient-info">
+          <p id="email-label" class="label"> Email Address </p>
+          <span id="email-output" class="outputs"></span>
+        </div>
+
+        <div class="patient-info">
+          <p id="id-number-label" class="label"> ID/Passport Number </p>
+          <span id="id-number-output" class="outputs"></span>
+        </div>
+
+        <button id="accept-patient" class="btn">Accept Patient</button>
+      </div>
+      
+    </div>
+
+    <script src="../js/hospital.dom.js"></script>
+    <script src="../js/qr.dom.js"></script>
+  </body>
+</html>
